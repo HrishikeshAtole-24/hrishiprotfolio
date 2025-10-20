@@ -1541,6 +1541,8 @@ body::-webkit-scrollbar {
 
 .exp-achievements {
     margin-top: 15px;
+    list-style: none; /* Remove default bullets */
+    padding-left: 0;
 }
 
 .exp-achievements li {
@@ -1548,14 +1550,18 @@ body::-webkit-scrollbar {
     margin-bottom: 8px;
     padding-left: 20px;
     position: relative;
+    line-height: 1.5;
 }
 
 .exp-achievements li::before {
     content: '▶';
     position: absolute;
     left: 0;
+    top: 50%;
+    transform: translateY(-50%);
     color: #2ecc71;
     font-size: 0.8rem;
+    line-height: 1;
 }
 
 /* Services Page */
