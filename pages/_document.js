@@ -4,8 +4,14 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
-        <link rel="icon" href="/favicon.ico" />
-        <link rel="apple-touch-icon" href="/favicon.ico" />
+        {/* Standard favicon */}
+        <link rel="icon" href="/favicon.ico?v=2" />
+        <link rel="shortcut icon" href="/favicon.ico?v=2" />
+        
+        {/* Additional formats */}
+        <link rel="icon" type="image/png" sizes="32x32" href="/log0_h.jpg?v=2" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/log0_h.jpg?v=2" />
+        
         <meta name="theme-color" content="#2ecc71" />
       </Head>
       <body>
