@@ -115,7 +115,7 @@ export const portfolioData = {
       },
       {
         title: "Payment Integration",
-        description: "I've integrated various payment gateways into web applications, ensuring secure and smooth transactions. These include Razorpay and Urbanledger for Indian markets, and TheMap, CuracaoPay, Payler, and Checkout.com for handling international payments."
+        description: "I've integrated various payment gateways into web applications, ensuring secure and smooth transactions. These include Razorpay, payU, Epay and Juspay for Indian markets, and TheMap, Urbanledger, Ngenius, Paytabs, CuracaoPay, Payler, Myo! and Checkout.com for handling international payments."
       }
     ]
   },
@@ -169,7 +169,7 @@ export const portfolioData = {
     {
       icon: "fas fa-code",
       title: "Full-Stack Web Development",
-      description: "I build complete, end-to-end web solutions using powerful frontend and backend technologies. With frameworks like React.js and Angular, I develop responsive, user-friendly interfaces. On the backend, I use Java (Spring Boot) or Node.js to create secure, scalable applications with RESTful APIs for seamless communication."
+      description: "I build complete, end-to-end web solutions using powerful frontend and backend technologies. With frameworks like React.js and Angular, I develop responsive, user-friendly interfaces. On the backend, I use Java (Spring) or Node.js to create secure, scalable applications with RESTful APIs for seamless communication."
     },
     {
       icon: "fas fa-laptop-code",

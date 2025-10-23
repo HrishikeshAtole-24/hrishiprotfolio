@@ -136,43 +136,52 @@ const BackgroundPage = () => {
               <i className="fas fa-briefcase"></i>
               Professional Experience
             </motion.h2>
-            <div className="experience-list">
+            <div className="timeline">
               {experience.map((item, index) => (
                 <motion.div
                   key={index}
-                  className="experience-item"
+                  className="timeline-item"
                   initial={{ opacity: 0, y: 30 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.7 + index * 0.2 }}
-                  whileHover={{ 
-                    scale: 1.02, 
-                    y: -5,
-                    transition: { type: "spring", stiffness: 300 }
-                  }}
                 >
-                  <div className="exp-header">
-                    <h3>{item.title}</h3>
-                    <span className="exp-date">{item.period}</span>
-                  </div>
-                  <h4><i>{item.company}</i></h4>
-                  <p>{item.description}</p>
                   <motion.div 
-                    className="exp-achievements"
-                    variants={staggerContainer}
-                    initial="initial"
-                    animate="animate"
+                    className="timeline-dot"
+                    initial={{ scale: 0 }}
+                    animate={{ scale: 1 }}
+                    transition={{ delay: 0.9 + index * 0.2, type: "spring" }}
+                  />
+                  <motion.div 
+                    className="timeline-content"
+                    whileHover={{ scale: 1.02, y: -5 }}
+                    transition={{ type: "spring", stiffness: 300 }}
                   >
-                    {item.achievements.map((achievement, achIndex) => (
-                      <motion.li
-                        key={achIndex}
-                        variants={fadeInUp}
-                        initial={{ opacity: 0, x: 20 }}
-                        animate={{ opacity: 1, x: 0 }}
-                        transition={{ delay: 1 + index * 0.2 + achIndex * 0.1 }}
+                    <h3>{item.title}</h3>
+                    <h4><i>{item.company}</i></h4>
+                    <div className="timeline-meta">
+                      <span className="timeline-date">{item.period}</span>
+                    </div>
+                    <p>{item.description}</p>
+                    {item.achievements && item.achievements.length > 0 && (
+                      <motion.div 
+                        className="exp-achievements"
+                        variants={staggerContainer}
+                        initial="initial"
+                        animate="animate"
                       >
-                        {achievement}
-                      </motion.li>
-                    ))}
+                        {item.achievements.map((achievement, achIndex) => (
+                          <motion.li
+                            key={achIndex}
+                            variants={fadeInUp}
+                            initial={{ opacity: 0, x: 20 }}
+                            animate={{ opacity: 1, x: 0 }}
+                            transition={{ delay: 1.1 + index * 0.2 + achIndex * 0.1 }}
+                          >
+                            {achievement}
+                          </motion.li>
+                        ))}
+                      </motion.div>
+                    )}
                   </motion.div>
                 </motion.div>
               ))}
