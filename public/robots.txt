@@ -1,8 +1,4 @@
 User-agent: *
 Allow: /
 
-# Sitemap
 Sitemap: https://hrishiprotfolio.vercel.app/sitemap.xml
-
-# Crawl-delay
-Crawl-delay: 1
