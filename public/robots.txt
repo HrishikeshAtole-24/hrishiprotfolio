@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://hrishiprotfolio.vercel.app/sitemap_1.xml
+Sitemap: https://hrishiprotfolio.vercel.app/sitemap.xml
