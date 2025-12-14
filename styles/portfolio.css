@@ -435,7 +435,7 @@ body::-webkit-scrollbar {
 .detail-item {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 3px;
     margin-bottom: 12px;
     font-size: 0.85rem;
 }
