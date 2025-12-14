@@ -109,12 +109,7 @@ export default function App({ Component, pageProps }) {
         <title>Hrishi Portfolio</title>
       </Head>
       
-      {/* Analytics Tracking Script */}
-      <Script
-        src="https://dashboard-backend-twj7.onrender.com/tracking/script.js"
-        data-website-id="web_mh0j26qzc224338g7lt"
-        strategy="afterInteractive"
-      />
+     
       
       <Component {...pageProps} />
     </>

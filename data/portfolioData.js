@@ -4,7 +4,7 @@ export const portfolioData = {
     name: "Hrishikesh Atole",
     title: "Software Engineer",
     image: "/hri_img4.jpeg",
-    email: "rishiatole45454@gmail.com",
+    email: "contact@hrishikeshatole.com",
     phone: "+91 7045215685",
     location: "Maharashtra, India",
     residence: "India",

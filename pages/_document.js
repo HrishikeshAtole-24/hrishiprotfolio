@@ -21,22 +21,22 @@ export default function Document() {
         
         {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://hrishiprotfolio.vercel.app/" />
+        <meta property="og:url" content="https://hrishikeshatole.com/" />
         <meta property="og:title" content="Hrishikesh Atole | Software Engineer & MERN Stack Developer" />
         <meta property="og:description" content="Portfolio of Hrishikesh Atole - Software Engineer from Mumbai specializing in MERN & MEAN Stack Development. Graduate from RGIT." />
-        <meta property="og:image" content="https://hrishiprotfolio.vercel.app/log0_h.jpg" />
+        <meta property="og:image" content="https://hrishikeshatole.com/log0_h.jpg" />
         <meta property="og:site_name" content="Hrishikesh Atole Portfolio" />
         <meta property="og:locale" content="en_US" />
         
         {/* Twitter */}
         <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content="https://hrishiprotfolio.vercel.app/" />
+        <meta property="twitter:url" content="https://hrishikeshatole.com/" />
         <meta property="twitter:title" content="Hrishikesh Atole | Software Engineer & MERN Stack Developer" />
         <meta property="twitter:description" content="Portfolio of Hrishikesh Atole - Software Engineer from Mumbai specializing in MERN & MEAN Stack Development." />
-        <meta property="twitter:image" content="https://hrishiprotfolio.vercel.app/log0_h.jpg" />
+        <meta property="twitter:image" content="https://hrishikeshatole.com/log0_h.jpg" />
         
         {/* Canonical URL */}
-        <link rel="canonical" href="https://hrishiprotfolio.vercel.app/" />
+        <link rel="canonical" href="https://hrishikeshatole.com/" />
         
         {/* Standard favicon */}
         <link rel="icon" href="/favicon.ico?v=2" />
@@ -58,7 +58,7 @@ export default function Document() {
               "name": "Hrishikesh Atole",
               "jobTitle": "Software Engineer",
               "description": "MERN & MEAN Stack Developer",
-              "url": "https://hrishiprotfolio.vercel.app/",
+              "url": "https://hrishikeshatole.com/",
               "sameAs": [],
               "address": {
                 "@type": "PostalAddress",
