@@ -3,7 +3,7 @@ export default function handler(req, res) {
   res.setHeader('Content-Type', 'application/xml');
   res.setHeader('Cache-Control', 'public, s-maxage=86400, stale-while-revalidate');
 
-  const baseUrl = 'https://hrishiprotfolio.vercel.app';
+  const baseUrl = 'https://hrishikeshatole.com';
   const currentDate = new Date().toISOString();
 
   // Define your site URLs here
