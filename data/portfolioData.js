@@ -185,27 +185,27 @@ export const portfolioData = {
 
   portfolio: [
     {
-      title: "E-Commerce Platform",
+      title: "Travel App",
       category: "web",
-      image: "https://via.placeholder.com/400x300/2ecc71/ffffff?text=E-Commerce+Platform",
-      description: "Full-stack e-commerce solution with payment integration",
-      demoUrl: "#",
+      image: "https://via.placeholder.com/400x300/2ecc71/ffffff?text=Travel+App",
+      description: "Full-stack travel application with modern UI and features",
+      demoUrl: "https://travel-chi-rust.vercel.app",
+      githubUrl: "https://github.com/HrishikeshAtole-24/travel"
+    },
+    {
+      title: "Example Site",
+      category: "web",
+      image: "https://via.placeholder.com/400x300/2ecc71/ffffff?text=Example",
+      description: "Testing with example.com to check iframe rendering",
+      demoUrl: "https://example.com",
       githubUrl: "#"
     },
     {
-      title: "Fitness Tracker App",
-      category: "mobile",
-      image: "https://via.placeholder.com/400x300/2ecc71/ffffff?text=Fitness+Tracker",
-      description: "React Native app with health monitoring features",
-      demoUrl: "#",
-      githubUrl: "#"
-    },
-    {
-      title: "Weather API Service",
-      category: "api",
-      image: "https://via.placeholder.com/400x300/2ecc71/ffffff?text=Weather+API",
-      description: "Scalable weather data API with real-time updates",
-      demoUrl: "#",
+      title: "Sample Project",
+      category: "web",
+      image: "https://via.placeholder.com/400x300/2ecc71/ffffff?text=Sample",
+      description: "Another test project to verify design",
+      demoUrl: "https://www.wikipedia.org",
       githubUrl: "#"
     }
   ],
