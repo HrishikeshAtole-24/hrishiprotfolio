@@ -160,7 +160,7 @@ const HomePage = ({ onPageChange }) => {
         </motion.div>
       </div>
       
-      {/* What People Say Section */}
+      {/*
       <div className="testimonials-section">
         <motion.h2 
           className="section-title"
@@ -195,7 +195,6 @@ const HomePage = ({ onPageChange }) => {
                 <p className="testimonial-message">"{testimonial.message}"</p>
               </div>
             ))}
-            {/* Duplicate testimonials for seamless loop */}
             {testimonials.map((testimonial, index) => (
               <div key={`duplicate-${index}`} className="scroll-card testimonial-card">
                 <div className="testimonial-header">
@@ -213,7 +212,8 @@ const HomePage = ({ onPageChange }) => {
           </motion.div>
         </div>
       </div>
-      
+      */}
+
       <PageFooter />
     </motion.div>
   );
