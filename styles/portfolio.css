@@ -2170,7 +2170,7 @@ body::-webkit-scrollbar {
 .page-footer {
     margin-top: auto;
     background: #1a1a1a;
-    padding: 20px 40px;
+    padding: 12px 40px;
     border-top: 1px solid #333;
     flex-shrink: 0;
     position: relative;

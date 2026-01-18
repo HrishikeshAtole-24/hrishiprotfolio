@@ -211,6 +211,7 @@ export const portfolioData = {
   codeSnippets: [
     {
       lines: [
+        "// Created by ऋषिकेश (Hrishikesh)",
         "const express = require('express');",
         "const app = express();",
         "const cors = require('cors');",
@@ -235,6 +236,7 @@ export const portfolioData = {
     },
     {
       lines: [
+        "// رشیکیش - Portfolio Component",
         "import React, { useState, useEffect } from 'react';",
         "import { motion, AnimatePresence } from 'framer-motion';",
         "",

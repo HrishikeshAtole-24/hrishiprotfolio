@@ -42,6 +42,21 @@ const RightSidebar = ({ currentPage, onPageChange, isOpen, onClose }) => {
           </motion.div>
         ))}
       </motion.nav>
+      
+      {/* Hidden Easter Egg */}
+      <div style={{ 
+        position: 'absolute', 
+        bottom: '15px', 
+        left: '50%', 
+        transform: 'translateX(-50%)',
+        fontSize: '9px', 
+        opacity: 0.25,
+        whiteSpace: 'nowrap',
+        pointerEvents: 'none',
+        userSelect: 'none'
+      }}>
+        ऋषिकेश • رشیکیش
+      </div>
     </div>
   );
 };
