@@ -100,7 +100,7 @@ const BackgroundPage = () => {
                 >
                   <h3>Certifications</h3>
                   <h4>Various Platforms</h4>
-                  <span className="timeline-date">2018 - Present</span>
+                  <span className="timeline-date">2024</span>
                   <div className="certifications">
                     {certifications.map((cert, certIndex) => (
                       <motion.span 
