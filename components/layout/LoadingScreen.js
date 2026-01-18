@@ -1,8 +1,15 @@
 import { motion } from 'framer-motion';
+import { useEffect } from 'react';
 import { useLoadingScreen } from '../../hooks/useLoadingScreen';
 
 const LoadingScreen = () => {
   const { isLoading, loadingText } = useLoadingScreen();
+
+  useEffect(() => {
+    if (isLoading) {
+      console.log('%c🌟 Welcome to my portfolio! ऋषिकेश | رشیکیش 🌟', 'color: #2ecc71; font-size: 16px; font-weight: bold;');
+    }
+  }, [isLoading]);
 
   if (!isLoading) return null;
 

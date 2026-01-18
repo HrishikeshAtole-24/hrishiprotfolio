@@ -14,6 +14,7 @@ const PageFooter = () => {
         </div>
         <div className="footer-right">
           <p>Copyright © 2025 | All Rights Reserved</p>
+          <p style={{ fontSize: '8px', opacity: 0.3, marginTop: '4px' }}>ऋषिकेश • رشیکیش</p>
         </div>
       </div>
     </motion.footer>

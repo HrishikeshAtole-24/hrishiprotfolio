@@ -38,7 +38,7 @@ const LeftSidebar = ({ isOpen, onClose }) => {
           />
           <div className="profile-overlay"></div>
         </motion.div>
-        <motion.h2 className="profile-name" {...fadeInUp}>
+        <motion.h2 className="profile-name" {...fadeInUp} title="ऋषिकेश • رشیکیش">
           {profile.name}
         </motion.h2>
         <motion.p className="profile-title" {...fadeInUp}>

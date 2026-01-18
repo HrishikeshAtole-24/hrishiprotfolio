@@ -2170,7 +2170,7 @@ body::-webkit-scrollbar {
 .page-footer {
     margin-top: auto;
     background: #1a1a1a;
-    padding: 20px 40px;
+    padding: 12px 40px;
     border-top: 1px solid #333;
     flex-shrink: 0;
     position: relative;
@@ -2832,6 +2832,20 @@ body::-webkit-scrollbar {
         margin-left: 250px;
         margin-right: 210px;
     }
+    
+    /* Responsive Code Animation for iPad/Tablet */
+    .code-animation {
+        padding: 20px;
+        max-width: 350px;
+    }
+    
+    .code-line {
+        font-size: 0.9rem;
+    }
+    
+    .floating-icon {
+        font-size: 1.5rem;
+    }
 }
 
 /* ==================== MOBILE BREAKPOINT (768px and below) ==================== */
@@ -2995,6 +3009,26 @@ body::-webkit-scrollbar {
     .page-footer {
         display: none !important;
     }
+    
+    /* Responsive Code Animation for Mobile */
+    .code-animation {
+        padding: 15px 20px;
+        max-width: 280px;
+        margin: 0 auto;
+    }
+    
+    .code-line {
+        font-size: 0.8rem;
+        margin-bottom: 6px;
+    }
+    
+    .floating-icon {
+        font-size: 1.3rem;
+    }
+    
+    .hero-visual {
+        padding: 0 10px;
+    }
 }
 
 /* ==================== ASUS ZENBOOK FOLD MOBILE ADJUSTMENTS ==================== */
@@ -3120,6 +3154,25 @@ body::-webkit-scrollbar {
         padding: 10px;
         font-size: 0.9rem;
     }
+    
+    /* Extra Small Code Animation for Small Mobile */
+    .code-animation {
+        padding: 12px 15px;
+        max-width: 240px;
+    }
+    
+    .code-line {
+        font-size: 0.7rem;
+        margin-bottom: 5px;
+    }
+    
+    .code-line.indent {
+        padding-left: 15px;
+    }
+    
+    .floating-icon {
+        font-size: 1.1rem;
+    }
 }
 
 /* ==================== EXTRA SMALL DEVICES (320px and below) ==================== */
@@ -3185,6 +3238,25 @@ body::-webkit-scrollbar {
     
     .nav-item span {
         font-size: 0.9rem;
+    }
+    
+    /* Tiny Code Animation for Extra Small Devices */
+    .code-animation {
+        padding: 10px 12px;
+        max-width: 200px;
+    }
+    
+    .code-line {
+        font-size: 0.65rem;
+        margin-bottom: 4px;
+    }
+    
+    .code-line.indent {
+        padding-left: 12px;
+    }
+    
+    .floating-icon {
+        font-size: 1rem;
     }
 }
 

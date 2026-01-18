@@ -3,13 +3,13 @@ export const portfolioData = {
   profile: {
     name: "Hrishikesh Atole",
     title: "Software Engineer",
-    image: "/hri_img4.jpeg",
+    image: "/h_img.jpeg",
     email: "contact@hrishikeshatole.com",
     phone: "+91 7045215685",
     location: "Maharashtra, India",
     residence: "India",
     city: "Thane",
-    bio: "Hey there! I’m Hrishikesh — a curious coder who loves building cool stuff with JavaScript & AI. From full-stack apps to smart tech, I turn ideas into interactive reality! Let’s build, break, and make magic on the web.",
+    bio: "I’m Hrishikesh — a curious coder who loves building cool stuff with JavaScript & AI. From full-stack apps to smart tech, I turn ideas into interactive reality! Let’s build, break, and make magic on the web.",
     company: "Vernost Tech Ventures"
   },
 
@@ -145,9 +145,7 @@ export const portfolioData = {
   ],
 
   certifications: [
-    "AWS Certified Solutions Architect",
-    "Google Cloud Professional",
-    "Microsoft Azure Developer"
+    "Full Stack Web Development with Java - Virash Technologies",
   ],
 
   experience: [
@@ -213,6 +211,7 @@ export const portfolioData = {
   codeSnippets: [
     {
       lines: [
+        "// Created by ऋषिकेश (Hrishikesh)",
         "const express = require('express');",
         "const app = express();",
         "const cors = require('cors');",
@@ -237,6 +236,7 @@ export const portfolioData = {
     },
     {
       lines: [
+        "// رشیکیش - Portfolio Component",
         "import React, { useState, useEffect } from 'react';",
         "import { motion, AnimatePresence } from 'framer-motion';",
         "",
