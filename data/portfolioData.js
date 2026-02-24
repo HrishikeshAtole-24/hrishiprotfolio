@@ -191,12 +191,12 @@ export const portfolioData = {
       githubUrl: "https://github.com/HrishikeshAtole-24/travel"
     },
     {
-      title: "Example Site",
+      title: "Roast Me AI",
       category: "web",
-      image: "https://via.placeholder.com/400x300/2ecc71/ffffff?text=Example",
-      description: "Testing with example.com to check iframe rendering",
-      demoUrl: "https://example.com",
-      githubUrl: "#"
+      image: "https://via.placeholder.com/400x300/2ecc71/ffffff?text=Roast+Me+AI",
+      description: "AI-powered roasting platform with interactive features",
+      demoUrl: "https://roast-me-ai-dusky.vercel.app/",
+      githubUrl: "https://github.com/HrishikeshAtole-24/RoastMeAI"
     },
     {
       title: "Sample Project",
