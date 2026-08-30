@@ -10,10 +10,10 @@ const ExpertisePage = () => {
   return (
     <motion.div 
       className="page expertise-page"
-      initial={{ opacity: 0, x: 50 }}
-      animate={{ opacity: 1, x: 0 }}
-      exit={{ opacity: 0, x: -50 }}
-      transition={{ duration: 0.3 }}
+      initial={{ opacity: 0, y: 12 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: -8 }}
+      transition={{ duration: 0.45, ease: [0.22, 0.61, 0.36, 1] }}
     >
       <CodeBackground />
       
@@ -40,9 +40,8 @@ const ExpertisePage = () => {
               className="expertise-card"
               variants={fadeInUp}
               whileHover={{ 
-                scale: 1.05,
-                y: -10,
-                transition: { type: "spring", stiffness: 300 }
+                y: -3,
+                transition: { duration: 0.28, ease: [0.22,0.61,0.36,1] }
               }}
             >
               <motion.h3
@@ -76,9 +75,8 @@ const ExpertisePage = () => {
               className="expertise-card"
               variants={fadeInUp}
               whileHover={{ 
-                scale: 1.05,
-                y: -10,
-                transition: { type: "spring", stiffness: 300 }
+                y: -3,
+                transition: { duration: 0.28, ease: [0.22,0.61,0.36,1] }
               }}
             >
               <motion.h3

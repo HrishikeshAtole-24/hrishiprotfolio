@@ -26,8 +26,8 @@ const LeftSidebar = ({ isOpen, onClose }) => {
       <div className="profile-header">
         <motion.div 
           className="profile-image"
-          whileHover={{ scale: 1.05 }}
-          transition={{ type: "spring", stiffness: 300 }}
+          whileHover={{ y: -1 }}
+          transition={{ duration: 0.28, ease: [0.22,0.61,0.36,1] }}
         >
           <Image 
             src={profile.image} 
@@ -121,8 +121,7 @@ const LeftSidebar = ({ isOpen, onClose }) => {
                 key={tool.name} 
                 className="tool-badge"
                 variants={fadeInUp}
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.95 }}
+                whileTap={{ scale: 0.98 }}
               >
                 {tool.iconName ? (
                   <SvgIcon name={tool.iconName} size={16} />
@@ -162,8 +161,8 @@ const LeftSidebar = ({ isOpen, onClose }) => {
           <motion.button 
             className="btn-download"
             onClick={handleDownloadResume}
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
+            whileHover={{ y: -1 }}
+            whileTap={{ scale: 0.98 }}
           >
             <SvgIcon name="download" size={16} />
             Download Resume
@@ -188,8 +187,8 @@ const LeftSidebar = ({ isOpen, onClose }) => {
               className="social-link" 
               title={link.name}
               variants={fadeInUp}
-              whileHover={{ scale: 1.2, rotate: 5 }}
-              whileTap={{ scale: 0.9 }}
+              whileHover={{ y: -2 }}
+              whileTap={{ scale: 0.96 }}
             >
               <SvgIcon name={link.iconName} size={20} />
             </motion.a>

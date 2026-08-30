@@ -10,10 +10,10 @@ const BackgroundPage = () => {
   return (
     <motion.div 
       className="page background-page"
-      initial={{ opacity: 0, x: 50 }}
-      animate={{ opacity: 1, x: 0 }}
-      exit={{ opacity: 0, x: -50 }}
-      transition={{ duration: 0.3 }}
+      initial={{ opacity: 0, y: 12 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: -8 }}
+      transition={{ duration: 0.45, ease: [0.22, 0.61, 0.36, 1] }}
     >
       <CodeBackground />
       
@@ -57,12 +57,12 @@ const BackgroundPage = () => {
                     className="timeline-dot"
                     initial={{ scale: 0 }}
                     animate={{ scale: 1 }}
-                    transition={{ delay: 0.7 + index * 0.2, type: "spring" }}
+                    transition={{ delay: 0.7 + index * 0.2, duration: 0.3, ease: [0.22,0.61,0.36,1] }}
                   />
                   <motion.div 
                     className="timeline-content"
-                    whileHover={{ scale: 1.02, y: -5 }}
-                    transition={{ type: "spring", stiffness: 300 }}
+                    whileHover={{ y: -2 }}
+                    transition={{ duration: 0.28, ease: [0.22,0.61,0.36,1] }}
                   >
                     <h3>{item.title}</h3>
                     <h4><i>{item.institution}</i></h4>
@@ -91,12 +91,12 @@ const BackgroundPage = () => {
                   className="timeline-dot"
                   initial={{ scale: 0 }}
                   animate={{ scale: 1 }}
-                  transition={{ delay: 1.1, type: "spring" }}
+                  transition={{ delay: 1.1, duration: 0.3, ease: [0.22,0.61,0.36,1] }}
                 />
                 <motion.div 
                   className="timeline-content"
-                  whileHover={{ scale: 1.02, y: -5 }}
-                  transition={{ type: "spring", stiffness: 300 }}
+                  whileHover={{ y: -2 }}
+                  transition={{ duration: 0.28, ease: [0.22,0.61,0.36,1] }}
                 >
                   <h3>Certifications</h3>
                   <h4>Various Platforms</h4>
@@ -109,7 +109,7 @@ const BackgroundPage = () => {
                         initial={{ opacity: 0, scale: 0 }}
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ delay: 1.3 + certIndex * 0.1 }}
-                        whileHover={{ scale: 1.1 }}
+                        whileHover={{ y: -1 }}
                       >
                         {cert}
                       </motion.span>
@@ -149,12 +149,12 @@ const BackgroundPage = () => {
                     className="timeline-dot"
                     initial={{ scale: 0 }}
                     animate={{ scale: 1 }}
-                    transition={{ delay: 0.9 + index * 0.2, type: "spring" }}
+                    transition={{ delay: 0.9 + index * 0.2, duration: 0.3, ease: [0.22,0.61,0.36,1] }}
                   />
                   <motion.div 
                     className="timeline-content"
-                    whileHover={{ scale: 1.02, y: -5 }}
-                    transition={{ type: "spring", stiffness: 300 }}
+                    whileHover={{ y: -2 }}
+                    transition={{ duration: 0.28, ease: [0.22,0.61,0.36,1] }}
                   >
                     <h3>{item.title}</h3>
                     <h4><i>{item.company}</i></h4>

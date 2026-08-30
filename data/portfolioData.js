@@ -183,26 +183,29 @@ export const portfolioData = {
 
   portfolio: [
     {
-      title: "Travel App",
+      title: "Travel",
       category: "web",
-      image: "https://via.placeholder.com/400x300/2ecc71/ffffff?text=Travel+App",
-      description: "Full-stack travel application with modern UI and features",
+      year: "2025",
+      tags: ["React", "Node.js", "MongoDB"],
+      description: "A full-stack travel planner — itinerary building, destination search and a booking flow, on a REST API with authenticated user sessions.",
       demoUrl: "https://travel-chi-rust.vercel.app",
       githubUrl: "https://github.com/HrishikeshAtole-24/travel"
     },
     {
       title: "Roast Me AI",
       category: "web",
-      image: "https://via.placeholder.com/400x300/2ecc71/ffffff?text=Roast+Me+AI",
-      description: "AI-powered roasting platform with interactive features",
+      year: "2025",
+      tags: ["Next.js", "LLM API", "Vercel"],
+      description: "An LLM-backed web app that generates personalised roasts from a user prompt, with streamed responses and rate-limited API routes.",
       demoUrl: "https://roast-me-ai-dusky.vercel.app/",
       githubUrl: "https://github.com/HrishikeshAtole-24/RoastMeAI"
     },
     {
       title: "ProWebKit",
       category: "web",
-      image: "https://via.placeholder.com/400x300/2ecc71/ffffff?text=ProWebKit",
-      description: "A modern web development toolkit for building scalable applications.",
+      year: "2026",
+      tags: ["Next.js 15", "TypeScript", "Tailwind", "RSC"],
+      description: "A library of 21 production-ready website templates across 7 professions, with token-based theming, per-page SEO metadata and compliance-aware copy built into the structure.",
       demoUrl: "https://pro-web-kit-brown.vercel.app/",
       githubUrl: "https://github.com/HrishikeshAtole-24/ProWebKit"
     },

@@ -22,7 +22,7 @@ const CodeBackground = () => {
           className="code-snippet-full"
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
-          exit={{ opacity: 0, scale: 1.05 }}
+          exit={{ opacity: 0, scale: 1.01 }}
           transition={{ duration: 1.2, ease: "easeInOut" }}
         >
           {codeSnippets[currentSnippet].lines.map((line, lineIndex) => (

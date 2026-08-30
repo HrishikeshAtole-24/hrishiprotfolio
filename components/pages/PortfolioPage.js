@@ -12,10 +12,10 @@ const PortfolioPage = () => {
   return (
     <motion.div 
       className="page portfolio-page"
-      initial={{ opacity: 0, x: 50 }}
-      animate={{ opacity: 1, x: 0 }}
-      exit={{ opacity: 0, x: -50 }}
-      transition={{ duration: 0.3 }}
+      initial={{ opacity: 0, y: 12 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: -8 }}
+      transition={{ duration: 0.45, ease: [0.22, 0.61, 0.36, 1] }}
     >
       <CodeBackground />
       
@@ -42,7 +42,7 @@ const PortfolioPage = () => {
                 variants={fadeInUp}
                 whileHover={{ 
                   y: -10,
-                  transition: { type: "spring", stiffness: 300 }
+                  transition: { duration: 0.28, ease: [0.22,0.61,0.36,1] }
                 }}
               >
                 <div className="portfolio-card-inner">
@@ -97,8 +97,8 @@ const PortfolioPage = () => {
                           <motion.button
                             onClick={() => setSelectedProject(project)}
                             className="portfolio-btn portfolio-btn-primary"
-                            whileHover={{ scale: 1.05 }}
-                            whileTap={{ scale: 0.95 }}
+                            whileHover={{ y: -1 }}
+                            whileTap={{ scale: 0.98 }}
                           >
                             <i className="fas fa-expand-alt"></i> Preview
                           </motion.button>
@@ -107,8 +107,8 @@ const PortfolioPage = () => {
                             target="_blank"
                             rel="noopener noreferrer"
                             className="portfolio-btn portfolio-btn-secondary"
-                            whileHover={{ scale: 1.05 }}
-                            whileTap={{ scale: 0.95 }}
+                            whileHover={{ y: -1 }}
+                            whileTap={{ scale: 0.98 }}
                           >
                             <i className="fas fa-external-link-alt"></i> Visit
                           </motion.a>
@@ -120,8 +120,8 @@ const PortfolioPage = () => {
                           target="_blank"
                           rel="noopener noreferrer" 
                           className="portfolio-btn portfolio-btn-secondary"
-                          whileHover={{ scale: 1.05 }}
-                          whileTap={{ scale: 0.95 }}
+                          whileHover={{ y: -1 }}
+                          whileTap={{ scale: 0.98 }}
                         >
                           <i className="fab fa-github"></i> Code
                         </motion.a>

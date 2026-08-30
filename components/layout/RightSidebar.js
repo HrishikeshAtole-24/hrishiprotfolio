@@ -24,16 +24,15 @@ const RightSidebar = ({ currentPage, onPageChange, isOpen, onClose }) => {
             onClick={() => onPageChange(item.page)}
             variants={fadeInUp}
             whileHover={{ 
-              scale: 1.05,
-              transition: { type: "spring", stiffness: 300 }
+              x: 2,
+              transition: { duration: 0.2, ease: [0.22,0.61,0.36,1] }
             }}
-            whileTap={{ scale: 0.95 }}
+            whileTap={{ scale: 0.98 }}
           >
             <motion.div
               whileHover={{ 
-                scale: 1.2,
-                rotate: 5,
-                transition: { type: "spring", stiffness: 300 }
+                scale: 1.06,
+                transition: { duration: 0.28, ease: [0.22,0.61,0.36,1] }
               }}
             >
               <SvgIcon name={item.iconName} size={20} />

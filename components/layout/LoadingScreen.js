@@ -7,7 +7,7 @@ const LoadingScreen = () => {
 
   useEffect(() => {
     if (isLoading) {
-      console.log('%c🌟 Welcome to my portfolio! ऋषिकेश | رشیکیش 🌟', 'color: #2ecc71; font-size: 16px; font-weight: bold;');
+      console.log('%c🌟 Welcome to my portfolio! ऋषिकेश | رشیکیش 🌟', 'color: #e0c3a0; font-size: 16px; font-weight: bold;');
     }
   }, [isLoading]);
 

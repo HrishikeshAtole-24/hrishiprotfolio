@@ -4,6 +4,14 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
+        {/* Typography */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;450;500;600&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap"
+          rel="stylesheet"
+        />
+
         {/* Google Site Verification */}
         <meta name="google-site-verification" content="NsZFIo1-MdAn2huheto22SemoefmPiNS4M8Dd68vhHs" />
         
@@ -46,7 +54,7 @@ export default function Document() {
         <link rel="icon" type="image/png" sizes="32x32" href="/log0_h.jpg?v=2" />
         <link rel="apple-touch-icon" sizes="180x180" href="/log0_h.jpg?v=2" />
         
-        <meta name="theme-color" content="#2ecc71" />
+        <meta name="theme-color" content="#f4f2ed" />
         
         {/* Schema.org structured data */}
         <script

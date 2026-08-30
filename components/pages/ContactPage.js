@@ -102,10 +102,10 @@ const ContactPage = () => {
   return (
     <motion.div 
       className="page contact-page"
-      initial={{ opacity: 0, x: 50 }}
-      animate={{ opacity: 1, x: 0 }}
-      exit={{ opacity: 0, x: -50 }}
-      transition={{ duration: 0.3 }}
+      initial={{ opacity: 0, y: 12 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: -8 }}
+      transition={{ duration: 0.45, ease: [0.22, 0.61, 0.36, 1] }}
     >
       <CodeBackground />
       
@@ -154,12 +154,12 @@ const ContactPage = () => {
                   className="contact-item"
                   variants={fadeInUp}
                   whileHover={{ 
-                    scale: 1.05,
-                    transition: { type: "spring", stiffness: 300 }
+                    y: -2,
+                    transition: { duration: 0.28, ease: [0.22, 0.61, 0.36, 1] }
                   }}
                 >
                   <motion.div
-                    whileHover={{ scale: 1.2, rotate: 5 }}
+                    whileHover={{ scale: 1.06 }}
                     className="contact-icon"
                   >
                     <SvgIcon name={detail.iconName} size={24} />
@@ -194,7 +194,7 @@ const ContactPage = () => {
                   onChange={handleInputChange}
                   required
                   whileFocus={{ scale: 1.02 }}
-                  transition={{ type: "spring", stiffness: 300 }}
+                  transition={{ duration: 0.28, ease: [0.22,0.61,0.36,1] }}
                 />
               </motion.div>
               
@@ -207,7 +207,7 @@ const ContactPage = () => {
                   onChange={handleInputChange}
                   required
                   whileFocus={{ scale: 1.02 }}
-                  transition={{ type: "spring", stiffness: 300 }}
+                  transition={{ duration: 0.28, ease: [0.22,0.61,0.36,1] }}
                 />
               </motion.div>
               
@@ -220,7 +220,7 @@ const ContactPage = () => {
                   onChange={handleInputChange}
                   required
                   whileFocus={{ scale: 1.02 }}
-                  transition={{ type: "spring", stiffness: 300 }}
+                  transition={{ duration: 0.28, ease: [0.22,0.61,0.36,1] }}
                 />
               </motion.div>
               
@@ -233,7 +233,7 @@ const ContactPage = () => {
                   onChange={handleInputChange}
                   required
                   whileFocus={{ scale: 1.02 }}
-                  transition={{ type: "spring", stiffness: 300 }}
+                  transition={{ duration: 0.28, ease: [0.22,0.61,0.36,1] }}
                 />
               </motion.div>
               
