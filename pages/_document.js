@@ -1,8 +1,9 @@
 import { Html, Head, Main, NextScript } from "next/document";
+import { siteConfig } from "../config/site.config";
 
 export default function Document() {
   return (
-    <Html lang="en">
+    <Html lang="en" data-template={siteConfig.activeTemplate}>
       <Head>
         {/* Google Site Verification */}
         <meta name="google-site-verification" content="NsZFIo1-MdAn2huheto22SemoefmPiNS4M8Dd68vhHs" />
@@ -46,7 +47,7 @@ export default function Document() {
         <link rel="icon" type="image/png" sizes="32x32" href="/log0_h.jpg?v=2" />
         <link rel="apple-touch-icon" sizes="180x180" href="/log0_h.jpg?v=2" />
         
-        <meta name="theme-color" content="#2ecc71" />
+        
         
         {/* Schema.org structured data */}
         <script

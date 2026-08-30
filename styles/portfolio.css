@@ -1,5 +1,17 @@
+/* ============================================================
+   TEMPLATE 1 - "CLASSIC"
+   The original portfolio design, preserved exactly as-is.
+
+   NOTE: every rule in this file is authored for the classic
+   template. The element-level reset below is scoped to
+   html[data-template='classic'] so that templates 2-5 (which
+   use CSS Modules) are not affected by it. The class-based
+   rules further down cannot collide, because the other
+   templates use hashed CSS-Module class names.
+   ============================================================ */
+
 /* Reset and Base Styles */
-* {
+html[data-template='classic'] * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,37 +20,32 @@
     -ms-overflow-style: none !important;  /* Internet Explorer 10+ */
 }
 
-*::-webkit-scrollbar {
+html[data-template='classic'] *::-webkit-scrollbar {
     display: none !important; /* Chrome, Safari and Opera */
     width: 0 !important;
     height: 0 !important;
 }
 
-html, body {
+html[data-template='classic'],
+html[data-template='classic'] body {
     scrollbar-width: none !important; /* Firefox */
     -ms-overflow-style: none !important;  /* Internet Explorer 10+ */
 }
 
-html::-webkit-scrollbar,
-body::-webkit-scrollbar {
+html[data-template='classic']::-webkit-scrollbar,
+html[data-template='classic'] body::-webkit-scrollbar {
     display: none !important;
     width: 0 !important;
     height: 0 !important;
 }
 
-body {
+html[data-template='classic'] body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: #0a0a0a;
     color: #ffffff;
     overflow-x: hidden;
     overflow-y: auto;
     min-height: 100vh;
-    scrollbar-width: none; /* Firefox */
-    -ms-overflow-style: none; /* Internet Explorer 10+ */
-}
-
-body::-webkit-scrollbar {
-    display: none; /* Chrome, Safari, and Opera */
 }
 
 /* Loading Screen */
@@ -3646,12 +3653,12 @@ body::-webkit-scrollbar {
 
 /* Universal mobile fix to prevent horizontal scrolling */
 @media (max-width: 768px) {
-    * {
+    html[data-template='classic'] * {
         max-width: 100vw;
         box-sizing: border-box;
     }
     
-    html, body {
+    html[data-template='classic'], html[data-template='classic'] body {
         overflow-x: hidden !important;
         width: 100vw !important;
         max-width: 100vw !important;

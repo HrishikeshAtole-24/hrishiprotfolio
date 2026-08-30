@@ -175,3 +175,44 @@ const currentWork = {
 ![Profile Views](https://komarev.com/ghpvc/?username=HrishikeshAtole-24&color=blueviolet&style=for-the-badge)
 
 </div>
+
+## Design templates
+
+The portfolio ships with five independent designs. Switch between them by
+editing a single line in `config/site.config.js`:
+
+```js
+export const siteConfig = {
+  activeTemplate: 'monolith', // <- change this
+  showTemplateSwitcher: true, // floating preview switcher; set false for production
+};
+```
+
+| Key | Name | Direction |
+| --- | --- | --- |
+| `classic` | Classic | The original terminal-green design, preserved exactly |
+| `monolith` | Monolith | Swiss brutalist editorial - ink on paper, numbered work index |
+| `aurora` | Aurora | Light, airy, premium - soft gradient ground, card grid |
+| `atelier` | Atelier | Warm print magazine - serif display, drop cap, spread layout |
+| `kinetic` | Kinetic | Dark, motion-led - oversized type, horizontal work gallery |
+
+### How it works
+
+- `config/site.config.js` - the single switch, plus per-template font metadata.
+- `templates/registry.js` - lazily imports the active design, so a visitor only
+  downloads the one being rendered.
+- `templates/TemplateContext.js` - holds the active key and mirrors it onto
+  `<html data-template="...">`.
+- `templates/shared.js` - scroll reveal, contact-form state, active-section
+  tracking and the resume download, shared by templates 2-5.
+- `templates/<name>/` - each design is a self-contained component plus a CSS
+  Module, so their styles cannot collide.
+
+All five read the same content from `data/portfolioData.js`. Editing your bio,
+projects or experience updates every template at once.
+
+### Adding a sixth template
+
+1. Create `templates/mydesign/index.js` and `templates/mydesign/mydesign.module.css`.
+2. Add an entry to `templates` in `config/site.config.js`.
+3. Register it in `templates/registry.js`.

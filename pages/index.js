@@ -1,17 +1,20 @@
-import Head from "next/head";
-import Layout from "../components/layout/Layout";
+import Head from 'next/head';
+import { useTemplate } from '../templates/TemplateContext';
+import { getTemplateComponent } from '../templates/registry';
 
 export default function Home() {
+  const { activeKey } = useTemplate();
+  const Template = getTemplateComponent(activeKey);
+
   return (
     <>
       <Head>
-        <title>Hrishikesh - Software Engineer Portfolio</title>
-        <meta name="description" content="Passionate software engineer with 5+ years of experience in full-stack development" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+        <meta
+          name="description"
+          content="Hrishikesh Atole - Software Engineer specialising in full-stack and fintech payment systems."
+        />
       </Head>
-      <Layout />
+      <Template />
     </>
   );
 }
