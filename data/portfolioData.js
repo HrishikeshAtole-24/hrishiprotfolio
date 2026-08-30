@@ -199,13 +199,21 @@ export const portfolioData = {
       githubUrl: "https://github.com/HrishikeshAtole-24/RoastMeAI"
     },
     {
+      title: "ProWebKit",
+      category: "web",
+      image: "https://via.placeholder.com/400x300/2ecc71/ffffff?text=ProWebKit",
+      description: "A modern web development toolkit for building scalable applications.",
+      demoUrl: "https://pro-web-kit-brown.vercel.app/",
+      githubUrl: "https://github.com/HrishikeshAtole-24/ProWebKit"
+    },
+    /* {
       title: "Sample Project",
       category: "web",
       image: "https://via.placeholder.com/400x300/2ecc71/ffffff?text=Sample",
       description: "Another test project to verify design",
       demoUrl: "https://www.wikipedia.org",
       githubUrl: "#"
-    }
+    } */
   ],
 
   codeSnippets: [
