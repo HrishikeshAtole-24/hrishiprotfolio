@@ -1,0 +1,214 @@
+/* ============================================================
+   THEME VARIANTS
+   Loaded after studio.css. Each block re-tokens the same bones.
+   Switch with ACTIVE in config/theme.js.
+   ============================================================ */
+
+/* ============================================================
+   CHARCOAL LUXE — same bones, inverted.
+   Warm near-black, ivory ink, sand accent.
+   ============================================================ */
+
+[data-theme="charcoal"] {
+    --paper:      #0f0e0c;
+    --paper-2:    #16140f;
+    --paper-3:    #221f19;
+    --ink:        #f0ece4;
+    --ink-2:      #a8a196;
+    --ink-3:      #7d766b;
+    --ink-4:      #56504a;
+
+    --rule:       rgba(240, 236, 228, 0.13);
+    --rule-soft:  rgba(240, 236, 228, 0.07);
+
+    --clay:       #c8a882;
+    --clay-2:     #d9bd9b;
+    --clay-wash:  rgba(200, 168, 130, 0.09);
+
+    --dark:       #191610;
+    --dark-2:     #221e17;
+    --dark-rule:  rgba(240, 236, 228, 0.13);
+    --dark-ink:   #f0ece4;
+    --dark-ink-2: #a8a196;
+}
+
+/* Grain reads as film grain on dark — pull it back */
+[data-theme="charcoal"] body::before { opacity: .32; }
+
+[data-theme="charcoal"] .nav.stuck { background: rgba(15, 14, 12, 0.78); }
+
+/* Hover washes must lighten here, not darken */
+[data-theme="charcoal"] .nav-link:hover,
+[data-theme="charcoal"] .work-row:hover,
+[data-theme="charcoal"] .svc-row:hover { background: rgba(240, 236, 228, .04); }
+
+[data-theme="charcoal"] .hero-portrait img { filter: grayscale(1) contrast(1.06) brightness(.94); }
+[data-theme="charcoal"] .hero-portrait:hover img { filter: grayscale(0) contrast(1) brightness(1); }
+
+/* The contact slab is barely lighter than the page, so it needs a
+   hairline to read as a separate surface rather than a seam */
+[data-theme="charcoal"] .contact { border-top: 1px solid var(--rule); }
+
+[data-theme="charcoal"] .modal { background: rgba(0, 0, 0, .85); }
+[data-theme="charcoal"] .modal-body { background: var(--paper-2); }
+
+[data-theme="charcoal"] ::-webkit-scrollbar-thumb { background: var(--paper-3); }
+[data-theme="charcoal"] ::-webkit-scrollbar-thumb:hover { background: var(--ink-4); }
+
+/* ============================================================
+   SWISS GRID — pure black on pure white, one electric accent,
+   no serif, no radii, no soft edges. Loud on purpose.
+   ============================================================ */
+
+[data-theme="swiss"] {
+    --paper:      #ffffff;
+    --paper-2:    #f2f2f2;
+    --paper-3:    #e2e2e2;
+    --ink:        #000000;
+    --ink-2:      #3d3d3d;
+    --ink-3:      #767676;
+    --ink-4:      #a8a8a8;
+
+    --rule:       rgba(0, 0, 0, 0.9);
+    --rule-soft:  rgba(0, 0, 0, 0.16);
+
+    --clay:       #2222ff;
+    --clay-2:     #5555ff;
+    --clay-wash:  rgba(34, 34, 255, 0.08);
+
+    --dark:       #000000;
+    --dark-2:     #141414;
+    --dark-rule:  rgba(255, 255, 255, 0.24);
+    --dark-ink:   #ffffff;
+    --dark-ink-2: #a8a8a8;
+
+    /* No serif anywhere — the grotesk IS the display face */
+    --serif: "Archivo", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* Clinical white. Grain would only muddy it. */
+[data-theme="swiss"] body::before { display: none; }
+[data-theme="swiss"] body { letter-spacing: -0.011em; }
+
+/* Display type: tight, heavy, uppercase */
+[data-theme="swiss"] .display,
+[data-theme="swiss"] .hero-title,
+[data-theme="swiss"] .contact-title,
+[data-theme="swiss"] .work-name,
+[data-theme="swiss"] .cap h3,
+[data-theme="swiss"] .svc-row h3,
+[data-theme="swiss"] .entry h3,
+[data-theme="swiss"] .modal-head h3,
+[data-theme="swiss"] .sheet-nav a {
+    font-weight: 700;
+    letter-spacing: -0.045em;
+    text-transform: uppercase;
+    line-height: 0.9;
+}
+
+[data-theme="swiss"] .display em,
+[data-theme="swiss"] .contact-title em { font-style: normal; }
+
+[data-theme="swiss"] .hero-title { font-size: clamp(3rem, 12.5vw, 11rem); }
+[data-theme="swiss"] .entry h3,
+[data-theme="swiss"] .modal-head h3 { letter-spacing: -0.03em; line-height: 1.05; }
+[data-theme="swiss"] .cap h3,
+[data-theme="swiss"] .svc-row h3 { line-height: 1; }
+
+[data-theme="swiss"] .wordmark { font-weight: 700; letter-spacing: -0.04em; text-transform: uppercase; }
+
+/* Rules are structural here — heavier, doubled at section heads */
+[data-theme="swiss"] .eyebrow {
+    color: var(--ink);
+    font-weight: 600;
+    border-bottom-width: 2px;
+    padding-bottom: 14px;
+}
+
+[data-theme="swiss"] .work-list,
+[data-theme="swiss"] .svc,
+[data-theme="swiss"] .stats,
+[data-theme="swiss"] .contact-rows { border-top-width: 2px; }
+[data-theme="swiss"] .hero-top { border-bottom-width: 2px; }
+
+/* Square everything */
+[data-theme="swiss"] .btn,
+[data-theme="swiss"] .work-arrow,
+[data-theme="swiss"] .social,
+[data-theme="swiss"] .icon-btn,
+[data-theme="swiss"] .nav-link,
+[data-theme="swiss"] .nav-burger,
+[data-theme="swiss"] .work-tag,
+[data-theme="swiss"] .chip,
+[data-theme="swiss"] .modal-card,
+[data-theme="swiss"] .contact,
+[data-theme="swiss"] .hero-portrait figure,
+[data-theme="swiss"] .work-peek { border-radius: 0; }
+
+[data-theme="swiss"] .btn {
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    font-size: 12.5px;
+    border-width: 2px;
+}
+[data-theme="swiss"] .btn-ghost { border-color: var(--ink); }
+[data-theme="swiss"] .btn-solid:hover,
+[data-theme="swiss"] .btn-invert:hover { background: var(--clay); border-color: var(--clay); color: #fff; }
+
+[data-theme="swiss"] .hero-role .bar { background: var(--clay); height: 3px; flex-basis: 72px; }
+[data-theme="swiss"] .hero-role .txt { color: var(--ink); font-weight: 500; }
+
+[data-theme="swiss"] .hero-portrait img { filter: grayscale(1) contrast(1.15); }
+[data-theme="swiss"] .hero-portrait figcaption { color: var(--ink); font-weight: 500; }
+
+[data-theme="swiss"] .stat dd { font-weight: 700; letter-spacing: -0.05em; }
+[data-theme="swiss"] .stat dd sup { color: var(--clay); }
+
+[data-theme="swiss"] .marquee { background: var(--ink); border-color: var(--ink); }
+[data-theme="swiss"] .marquee-item { color: #fff; font-weight: 500; }
+[data-theme="swiss"] .marquee-item .sep { color: var(--clay-2); }
+
+/* The row itself floods with the accent on hover */
+[data-theme="swiss"] .work-row:hover { background: var(--clay); }
+[data-theme="swiss"] .work-row:hover .work-name,
+[data-theme="swiss"] .work-row:hover .work-idx,
+[data-theme="swiss"] .work-row:hover .work-blurb,
+[data-theme="swiss"] .work-row:hover .work-year { color: #fff; }
+[data-theme="swiss"] .work-row:hover .work-tag { color: #fff; border-color: rgba(255,255,255,.5); }
+[data-theme="swiss"] .work-row:hover .work-arrow { background: #fff; border-color: #fff; color: var(--clay); }
+
+[data-theme="swiss"] .cap:hover { background: var(--clay-wash); }
+[data-theme="swiss"] .cap-num,
+[data-theme="swiss"] .svc-row .n { font-weight: 600; }
+[data-theme="swiss"] .svc-row:hover { background: var(--paper-2); }
+
+[data-theme="swiss"] .entry .org { font-weight: 500; }
+[data-theme="swiss"] .entry ul li::before { height: 2px; background: var(--clay); }
+[data-theme="swiss"] .skill-fill { background: var(--clay); }
+[data-theme="swiss"] .skill-track { height: 4px; background: var(--paper-3); }
+
+[data-theme="swiss"] .contact { margin-top: 0; }
+[data-theme="swiss"] .contact .eyebrow { color: #fff; border-bottom-color: var(--dark-rule); }
+[data-theme="swiss"] .field input:focus,
+[data-theme="swiss"] .field textarea:focus { border-bottom-color: var(--clay-2); }
+[data-theme="swiss"] .social:hover { background: var(--clay); border-color: var(--clay); color: #fff; }
+
+[data-theme="swiss"] .nav.stuck { background: rgba(255,255,255,.92); border-bottom-width: 2px; }
+[data-theme="swiss"] .nav-link { text-transform: uppercase; font-size: 12px; font-weight: 600; letter-spacing: 0.04em; }
+[data-theme="swiss"] .nav-link.active { color: var(--clay); }
+[data-theme="swiss"] .nav-link.active::before { background: var(--clay); height: 2px; }
+
+[data-theme="swiss"] ::selection { background: var(--clay); color: #fff; }
+[data-theme="swiss"] ::-webkit-scrollbar-thumb { background: var(--ink); border-radius: 0; }
+
+/* ============================================================
+   TERMINAL — the legacy sidebar build loads its own stylesheet
+   on top of this one. Only the shared element-level rules need
+   to stand down so they do not fight it.
+   ============================================================ */
+
+[data-theme="terminal"] body::before { display: none; }
+[data-theme="terminal"] body { font-size: 16px; letter-spacing: normal; }
+[data-theme="terminal"] { scroll-behavior: auto; }
+[data-theme="terminal"] ::selection { background: rgba(46, 204, 113, .3); color: inherit; }

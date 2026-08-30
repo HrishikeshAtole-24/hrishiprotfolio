@@ -1,16 +1,28 @@
 import { Html, Head, Main, NextScript } from "next/document";
+import { ACTIVE, current, isLegacy } from "../config/theme";
 
 export default function Document() {
   return (
-    <Html lang="en">
+    <Html lang="en" data-theme={ACTIVE}>
       <Head>
         {/* Typography */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link
-          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;450;500;600&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;450;500;600&family=Instrument+Serif:ital@0;1&family=Archivo:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
           rel="stylesheet"
         />
+
+        {/* The terminal theme runs on the legacy stylesheet + icon font */}
+        {isLegacy() && (
+          <>
+            <link rel="stylesheet" href="/themes/terminal.css" />
+            <link
+              rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+            />
+          </>
+        )}
 
         {/* Google Site Verification */}
         <meta name="google-site-verification" content="NsZFIo1-MdAn2huheto22SemoefmPiNS4M8Dd68vhHs" />
@@ -54,7 +66,7 @@ export default function Document() {
         <link rel="icon" type="image/png" sizes="32x32" href="/log0_h.jpg?v=2" />
         <link rel="apple-touch-icon" sizes="180x180" href="/log0_h.jpg?v=2" />
         
-        <meta name="theme-color" content="#f4f2ed" />
+        <meta name="theme-color" content={current().color} />
         
         {/* Schema.org structured data */}
         <script
