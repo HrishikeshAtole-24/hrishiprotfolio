@@ -202,7 +202,7 @@ export const portfolioData = {
       title: "ProWebKit",
       category: "web",
       image: "https://via.placeholder.com/400x300/2ecc71/ffffff?text=ProWebKit",
-      description: "A modern web development toolkitt for building scalable applications.",
+      description: "A modern web development toolkit for building scalable applications.",
       demoUrl: "https://pro-web-kit-brown.vercel.app/",
       githubUrl: "https://github.com/HrishikeshAtole-24/ProWebKit"
     },
