@@ -5,7 +5,7 @@
 ### *Hey there! I'm Hrishikesh — a curious coder who loves building cool stuff with JavaScript & AI.* 
 ### *From full-stack apps to smart tech, I turn ideas into interactive reality!*
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-Live-00D4FF?style=for-the-badge&logo=vercel&logoColor=white)](http://localhost:3000)
+[![Portfolio](https://img.shields.io/badge/Portfolio-Live-00D4FF?style=for-the-badge&logo=vercel&logoColor=white)](https://hrishikeshatole.com)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/hrishikesh-atole-b07a4a256)
 [![Upwork](https://img.shields.io/badge/Upwork-Hire_Me-6FDA44?style=for-the-badge&logo=upwork&logoColor=white)](https://www.upwork.com/freelancers/~01a847670768913015)
 [![LeetCode](https://img.shields.io/badge/LeetCode-Profile-FFA116?style=for-the-badge&logo=leetcode&logoColor=white)](https://leetcode.com/u/HrishikeshAtole/)
